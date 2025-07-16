@@ -1,121 +1,178 @@
-/* soal no 3 */
+/* --- Soal No. 3 --- */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   outline: 0;
+  box-sizing: border-box;
 }
 
-/* soal no 4 */
+/* --- Soal No. 4 --- */
+/* CSS Variables (Custom Properties) */
 :root {
   --color1: #fff;
+  --primary-background: #f0f2f5;
+  --text-color-dark: #333;
 }
 
-/* Soal No. 5 */
+/* Body Styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-background);
+  color: var(--text-color-dark);
+  line-height: 1.6;
+}
+
+/* --- Soal No. 2 --- */
+/* Internal CSS (Berlaku untuk h1) */
+h1 {
+  color: brown;
+  margin-bottom: 20px;
+}
+
+/* --- Soal No. 5 --- */
+
 .text > p {
   font-size: 20px;
   color: coral;
+  margin-bottom: 20px;
 }
 
-/* Soal No. 6 Mulai*/
+/* --- Soal No. 6 --- */
 h3 {
   font-size: 30px;
   color: red;
+  margin-bottom: 15px;
 }
 
 .kelas {
   color: cadetblue;
   border: 1px solid black;
-  width: 20%;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #e6e6fa;
 }
 
 #id {
   margin-top: 20px;
   color: black;
   border: 1px solid black;
-  width: 20%;
+  width: 200px;
+  padding: 10px;
   margin-bottom: 20px;
   background-color: chartreuse;
 }
-/* Soal No. 6 Selesai*/
 
-/* Soal No. 7 */
+/* --- Soal No. 7 --- */
 input[type="text"] {
-  padding: 5px;
+  padding: 10px;
   font-family: cursive;
-  font-size: 24px;
-}
-
-body {
-  font-family: sans-serif, Montserrat;
-  background-color: var(--color1);
-  height: 2000px;
-}
-/* position */
-.box {
-  width: 100px;
-  height: 50px;
-  background: rebeccapurple;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  border: 2px solid black;
-  color: orchid;
+  width: 250px;
+  margin-bottom: 20px;
 }
 
-/* Soal No. 8  dan 11*/
+/* --- Soal No. 9 --- */
+a:hover {
+  color: royalblue;
+}
+
+/* --- Soal No. 10 --- */
+.verb::after {
+  content: " Let's go!!!!";
+  font-size: 20px;
+  color: darkred;
+  font-weight: bold;
+}
+
+/* Styling Dasar Box untuk Posisi */
+.box {
+  width: 120px;
+  height: 70px;
+  background: rebeccapurple;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* --- Soal No. 8 & 11 --- */
+/* `position: relative` (pada parent) */
+.position-box {
+  border: 2px dashed gray;
+  padding: 30px;
+  margin-bottom: 50px;
+  position: relative;
+  height: 200px;
+}
+
+/* `position: relative` (pada child) */
 .position-box > div:nth-child(1) {
   position: relative;
   background-color: blueviolet;
-  color: #fff;
+  left: 20px;
+  top: 20px;
 }
 
-/* soal no 12 */
+/* --- Soal No. 12 --- */
+/* `position: absolute` */
 .position-box > div:nth-child(2) {
   position: absolute;
-  right: 0px;
-  top: 10 0px;
+  right: 10px;
+  top: 10px;
   background-color: red;
+  z-index: 1;
 }
 
+/* --- Soal No. 13 --- */
+/* `position: sticky` */
 .header {
   position: sticky;
   background-color: cornflowerblue;
-  height: 50%;
+  height: 60px;
   width: 100%;
   top: 0;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* --- Soal No. 14 --- */
+/* `position: fixed` */
 .act-btn {
   background: green;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
-  line-height: 50px;
-  text-align: center;
   color: white;
   font-size: 30px;
   font-weight: bold;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
   text-decoration: none;
-  transition: ease all 0.3s;
+  transition: background ease 0.3s;
   position: fixed;
   right: 30px;
   bottom: 30px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 .act-btn:hover {
   background: blue;
-}
-
-/* Soal No. 10 */
-.verb::after {
-  content: " Lets go!!!!";
-  font-size: 20px;
-  color: red;
-}
-
-/* Soal no.9 */
-a:hover {
-  color: red;
+  transform: scale(1.05);
 }
