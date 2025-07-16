@@ -1,0 +1,121 @@
+/* soal no 3 */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+/* soal no 4 */
+:root {
+  --color1: #fff;
+}
+
+/* Soal No. 5 */
+.text > p {
+  font-size: 20px;
+  color: coral;
+}
+
+/* Soal No. 6 Mulai*/
+h3 {
+  font-size: 30px;
+  color: red;
+}
+
+.kelas {
+  color: cadetblue;
+  border: 1px solid black;
+  width: 20%;
+}
+
+#id {
+  margin-top: 20px;
+  color: black;
+  border: 1px solid black;
+  width: 20%;
+  margin-bottom: 20px;
+  background-color: chartreuse;
+}
+/* Soal No. 6 Selesai*/
+
+/* Soal No. 7 */
+input[type="text"] {
+  padding: 5px;
+  font-family: cursive;
+  font-size: 24px;
+}
+
+body {
+  font-family: sans-serif, Montserrat;
+  background-color: var(--color1);
+  height: 2000px;
+}
+/* position */
+.box {
+  width: 100px;
+  height: 50px;
+  background: rebeccapurple;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: orchid;
+}
+
+/* Soal No. 8  dan 11*/
+.position-box > div:nth-child(1) {
+  position: relative;
+  background-color: blueviolet;
+  color: #fff;
+}
+
+/* soal no 12 */
+.position-box > div:nth-child(2) {
+  position: absolute;
+  right: 0px;
+  top: 10 0px;
+  background-color: red;
+}
+
+.header {
+  position: sticky;
+  background-color: cornflowerblue;
+  height: 50%;
+  width: 100%;
+  top: 0;
+}
+
+.act-btn {
+  background: green;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-decoration: none;
+  transition: ease all 0.3s;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+.act-btn:hover {
+  background: blue;
+}
+
+/* Soal No. 10 */
+.verb::after {
+  content: " Lets go!!!!";
+  font-size: 20px;
+  color: red;
+}
+
+/* Soal no.9 */
+a:hover {
+  color: red;
+}
