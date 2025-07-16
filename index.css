@@ -65,14 +65,17 @@ h3 {
 }
 
 /* --- Soal No. 7 --- */
-input[type="text"] {
-  padding: 10px;
-  font-family: cursive;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 250px;
-  margin-bottom: 20px;
+.card.highlight-card {
+  background-color: #e6ffe6;
+  border: 1px solid #28a745;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* --- Soal No. 8 */
+.card button + button {
+  margin-left: 10px;
+  color: #28a745;
+  height: 50px;
 }
 
 /* --- Soal No. 9 --- */
@@ -105,8 +108,8 @@ a:hover {
   font-weight: bold;
 }
 
-/* --- Soal No. 8 & 11 --- */
-/* `position: relative` (pada parent) */
+/* --- Soal No.  11 --- */
+
 .position-box {
   border: 2px dashed gray;
   padding: 30px;
@@ -172,6 +175,7 @@ a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* --- Soal No. 9 --- */
 .act-btn:hover {
   background: blue;
   transform: scale(1.05);
